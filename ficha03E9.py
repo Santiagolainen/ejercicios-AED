@@ -5,5 +5,6 @@ __author__ = "Santiago"
 x = int(input("Ingrese el presupuesto apra el sistema: "))
 
 porcentaje = x*0.17
+montoMaximo = x - porcentaje
 
-print("Lo máximo que se puede gastar en el proyecto es:", porcentaje)
+print("Lo máximo que se puede gastar en el proyecto es:", montoMaximo)

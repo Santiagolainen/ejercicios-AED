@@ -19,7 +19,7 @@ por_v2 = round((vot2 * 100) / votos_total, 2)
 por_v3 = round((vot3 * 100) / votos_total, 2)
 
 votPartidos = [[form1, vot1, por_v1], [form2, vot2, por_v2], [form3, vot3, por_v3]]
-votPartidos.sort(key=lambda x: x[1], reverse=True)
+votPartidos.sort(key=lambda x: x[1])
 
 segundoPartido = votPartidos[1]
 

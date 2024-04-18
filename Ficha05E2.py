@@ -19,21 +19,20 @@ por_v2 = round((vot2 * 100) / votos_total, 2)
 por_v3 = round((vot3 * 100) / votos_total, 2)
 
 votPartidos = [[form1, vot1, por_v1], [form2, vot2, por_v2], [form3, vot3, por_v3]]
-votPartidos.sort(key=lambda x: x[1])
+votPartidos.sort(key=lambda x: x[1], reverse=True)
 
+primerPartido = votPartidos[0]
 segundoPartido = votPartidos[1]
 
-partidoMax = max(votPartidos, key=lambda x: x[1])
-
-if partidoMax[2] > 45:
+if primerPartido[2] > 45:
     b = 1
-    partidoGanador = partidoMax[0]
-    votosGanador = partidoMax[1]
-    porcentajeGanador = partidoMax[2]
+    partidoGanador = primerPartido[0]
+    votosGanador = primerPartido[1]
+    porcentajeGanador = primerPartido[2]
 else:
-    partido1 = partidoMax[0]
-    votosPartido1 = partidoMax[1]
-    porcentajePartido1 = partidoMax[2]
+    partido1 = primerPartido[0]
+    votosPartido1 = primerPartido[1]
+    porcentajePartido1 = primerPartido[2]
     partido2 = segundoPartido[0]
     votosPartido2 = segundoPartido[1]
     porcentajePartido2 = segundoPartido[2]

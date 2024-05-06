@@ -17,7 +17,10 @@ while n != 0:
         nums_mayor += 1
     num_anterior = n
     n = int(input("Ingrese un número (si ingresa 0 se cancela el programa): "))
+if i != 0:
+    cont_primer_num = cont_primer_num - 1
+    nums_mayor = nums_mayor - 1
 
 print(f"\nLa cantidad de números que terminan en 5 son {nums5}\n")
-print(f"La cantidad de veces que aparece el primer número son {cont_primer_num - 1}\n")
-print(f"La cantidad de números que son mayores a su antecesor son {nums_mayor - 1}")
+print(f"La cantidad de veces que aparece el primer número son {cont_primer_num}\n")
+print(f"La cantidad de números que son mayores a su antecesor son {nums_mayor}")

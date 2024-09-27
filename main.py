@@ -1,3 +1,5 @@
-__author__ = "Santiago"
+def main():
+    print('Ndeah')
 
-print("Hola a todos")
+if __name__ == '__main__':
+    main()
